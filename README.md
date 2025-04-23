@@ -24,29 +24,43 @@ By default, it considers the following status codes as active:
 ─────────────────────────────
 
 🛠️ Usage:
+
 python azulive.py -l <input_file> -o <output_file> [-i <status_codes>]
 
 Example:
+
 python azulive.py -l example.txt -o activesubdomain
+
 python azulive.py -l example.txt -o activesubdomain -i 200 300 403
 
 Arguments:
-  -l, --list       Path to the file containing domains
-  -o, --output     File to save active domains
-  -i, --include    (Optional) Status codes to consider as active
 
+  -l, --list       Path to the file containing domains
+  
+  -o, --output     File to save active domains
+  
+  -i, --include    (Optional) Status codes to consider as active
+  
 ─────────────────────────────
 
 📁 Input File Format:
+
 Each domain or subdomain should be written on a new line. For example:
+
 example.com
+
 sub.domain.com
+
+http://anotherdomain.org
+
 https://anotherdomain.org
 
 ─────────────────────────────
 
 🧑‍💻 Developer:
+
 https://github.com/rdkalopsia
+
 https://mebroccoli.blogspot.com
 
 ─────────────────────────────
@@ -55,13 +69,6 @@ https://mebroccoli.blogspot.com
 - Requires internet connection.
 - Works on Python 3.6+
 - Ensure the input file does not contain blank lines.
-
-─────────────────────────────
-
-🎯 Future Plans (Coming Soon?):
-- Add optional IP scanning mode
-- Add timeout handling & error logging
-- GUI version (maybe 😉)
 
 ─────────────────────────────
 
