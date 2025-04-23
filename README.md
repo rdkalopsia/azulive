@@ -27,8 +27,8 @@ By default, it considers the following status codes as active:
 python azulive.py -l <input_file> -o <output_file> [-i <status_codes>]
 
 Example:
-python azulive.py -l list.txt -o aktif.txt
-python azulive.py -l list.txt -o hasil.txt -i 200 300 403
+python azulive.py -l example.txt -o activesubdomain
+python azulive.py -l example.txt -o activesubdomain -i 200 300 403
 
 Arguments:
   -l, --list       Path to the file containing domains
